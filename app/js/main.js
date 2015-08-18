@@ -1,9 +1,12 @@
 console.log('Angular Rocks', angular);
 
-function square(baseNumber) {
+$('#myForm').on('submit', function(event) {
+  event.preventDefault();
+  console.log("submitted!");
+  var baseNumber = $('#orignum').val();
   var answer = baseNumber * baseNumber;
   console.log("The square of " + baseNumber + " is " + answer);
   return answer;
-}
+});
 
-square(25);
+
