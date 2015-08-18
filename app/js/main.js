@@ -6,6 +6,7 @@ $('#myForm').on('submit', function(event) {
   var baseNumber = $('#orignum').val();
   var answer = baseNumber * baseNumber;
   console.log("The square of " + baseNumber + " is " + answer);
+  $('#answer').text(answer);
   return answer;
 });
 
